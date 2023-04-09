@@ -23,8 +23,8 @@ document.addEventListener("click", function(event) {
   }
 });
 function generateQuestion() {
-  num1 = Math.floor(Math.random() * 10) + 1;
-  num2 = Math.floor(Math.random() * 10) + 1;
+  num1 = Math.floor(Math.random() * 1000) + 1;
+  num2 = Math.floor(Math.random() * 1000) + 1;
   op = Math.floor(Math.random() * 2);
   
   if (op == 0) {
