@@ -8,10 +8,11 @@ document.addEventListener("submit", function(event) {
   event.preventDefault();
   
   if (parseInt(answer.value) == correctAnswer) {
-    result.innerHTML = "Yeey Kamu Benar!";
-    next.style.display = "inline";
+    result.innerHTML = "salah, kamu sangat bodoh ternyata!";
+    next.style.display = "none";
+    // next.style.display = "inline";
   } else {
-    result.innerHTML = "Uppss, Bodoh sekali anda!";
+    result.innerHTML = " Bodoh sekali anda!";
   }
 });
 document.addEventListener("click", function(event) {
@@ -23,8 +24,8 @@ document.addEventListener("click", function(event) {
   }
 });
 function generateQuestion() {
-  num1 = Math.floor(Math.random() * 1000) + 1;
-  num2 = Math.floor(Math.random() * 1000) + 1;
+  num1 = Math.floor(Math.random() * 10000) + 1;
+  num2 = Math.floor(Math.random() * 10000) + 1;
   op = Math.floor(Math.random() * 2);
   
   if (op == 0) {
