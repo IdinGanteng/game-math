@@ -1,0 +1,30 @@
+#question {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  background-color: #467a7a;
+}
+#result {
+  font-size: 24px;
+  margin-top: 20px;
+  color: aliceblue;
+}
+.card-body{
+  text-align: center;
+  box-shadow: 8px 4px 8px 4px  rgba(0,0,0,0.2);
+  margin-top: 800px;
+  background-color:#3e4444;
+}
+h2{
+  font-family:monospace;  
+  color: aliceblue;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3e4444;
+  color: white;
+  text-align: center;
+}
