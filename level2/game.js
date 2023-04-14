@@ -8,9 +8,9 @@ document.addEventListener("submit", function(event) {
   event.preventDefault();
   
   if (parseInt(answer.value) == correctAnswer) {
-    result.innerHTML = "salah, kamu sangat bodoh!";
-    // next.style.display = "inline";
-    next.style.display = "none";
+    result.innerHTML =  "yeyy,, jawaban kamu benarr!";
+    next.style.display = "inline";
+    // next.style.display = "none";
   } else {
     result.innerHTML = " Bodoh sekali anda!";
   }
@@ -24,8 +24,8 @@ document.addEventListener("click", function(event) {
   }
 });
 function generateQuestion() {
-  num1 = Math.floor(Math.random() * 100000) + 1;
-  num2 = Math.floor(Math.random() * 100000) + 1;
+  num1 = Math.floor(Math.random() * 100) + 1;
+  num2 = Math.floor(Math.random() * 100) + 1;
   op = Math.floor(Math.random() * 2);
   
   if (op == 0) {
